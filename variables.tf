@@ -19,3 +19,11 @@ variable "numvm" {
   type = number
   description = "this is for number of vm to be created"
 }
+# variables with map data type
+variable "ec2instances" {
+    type = map(string)
+  default = {
+    "web" = "t3.micro"
+    "db" = "t2.small"
+  }
+}
