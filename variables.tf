@@ -15,7 +15,7 @@ variable "vm-name" {
     #default = "amar-vm1"
   
 }
-variable "novm" {
+variable "numvm" {
   type = number
   description = "this is for number of vm to be created"
 }
